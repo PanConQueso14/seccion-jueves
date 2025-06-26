@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.fondo-rojo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px; /* ajusta para que llegue justo hasta el segundo campo */
+  width: 100%;
+  background-color: #e74c3c;
+  z-index: -1;
+}
+
+.container {
+  background-color: #dceeff;
+  padding: 20px;
+  width: 600px;
+  margin: 40px auto;
+  border-color: #bcd3e8;
+  border-width: 2px;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fila label {
+  width: 150px;
+  text-align: left;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.fila input {
+  width: 180px;
+  padding: 6px;
+  border: 1px solid #aaa;
+}
+
+.fila button {
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid #888;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fila button:hover {
+  background-color: #cce6ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid black;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #c0392b;
+}

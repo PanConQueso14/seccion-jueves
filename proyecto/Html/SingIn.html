@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="../Estilos/SingInStyles.css">
+</head>
+<body>
+    <div class="left-background">
+    </div>
+    <div class="right-background">
+        <div class="login-container">
+            <h1>Bienvenido</h1>
+            <h2>Iniciar sesión</h2>
+            <form id="loginForm">
+                <label for="usuario">Nombre Usuario o Correo email</label>
+                <input type="text" id="usuario" name="usuario">
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+
+                <a href="#" class="forgot-password">Recuperar Contraseña</a>
+
+                <!-- <button type="submit" id="confirmarBtn">Confirmar</button> -->
+            </form>
+            <button type="button" id="confirmarBtn">Confirmar</button> <br>
+            <a href="SingUp.html"><button id="RegsitrarmeBtn">Registrarse</button></a> 
+        </div>
+    </div>
+
+    <div id="passwordRecoveryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Recuperar Contraseña</h3>
+            <p>Por favor, introduce tu dirección de correo electrónico para restablecer tu contraseña.</p>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email">
+            <button type="button" id="sendRecoveryEmail">Enviar Enlace de Restablecimiento</button>
+            <div id="recoveryMessage" style="margin-top: 10px; font-size: 0.9em;"></div>
+        </div>
+    </div>
+
+    <script src="../javascrip/SingIn_Scrip.js"></script>
+</body>
+</html>

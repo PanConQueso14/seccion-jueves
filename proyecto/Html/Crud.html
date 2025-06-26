@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRUD</title>
+  <link rel="stylesheet" href="../Estilos/CrudStyles.css" />
+</head>
+<body>
+
+  <button><a href="dashboard.html">Volver</a></button>
+  <div class="fondo-rojo"></div>
+
+  <div class="container">
+    <h1>CRUD</h1>
+
+    <div class="formulario">
+      <div class="fila">
+        <label for="id">ID</label>
+        <input type="text" id="id" placeholder=""/>
+        <button onclick="buscar()">Buscar</button>
+      </div>
+      <div class="fila">
+        <label for="nombre">Nombre Usuario</label>
+        <input type="text" id="nombre" placeholder=""/>
+        <button onclick="confirmarAccion('eliminar')">Eliminar</button>
+      </div>
+      <div class="fila">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder=""/>
+        <button onclick="confirmarAccion('editar')">Editar</button>
+      </div>
+    </div>
+
+    <!-- Tabla con 5 filas vacías -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre usuario</th>
+          <th>Correo electrónico</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-datos">
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+    <!-- Popup de confirmación -->
+    <div class="popup" id="popup">
+      <p>¿Está seguro?</p>
+      <button onclick="ejecutarAccion()">Confirmar</button>
+    </div>
+  </div>
+
+  <script src="../javascrip/Crud_script.js"></script>
+</body>
+</html>
